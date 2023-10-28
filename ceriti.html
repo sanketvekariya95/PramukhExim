@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="styale.css">
+  <link rel="stylesheet" href="detail.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+/>
+  <script src="index.js"></script>
+</head>
+<style>
+    .myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .myImg:hover {
+        opacity: 0.7;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    /* Modal Content (Image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    /* Caption of Modal Image (Image Text) - Same Width as the Image */
+    .caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    /* Add Animation - Zoom in the Modal */
+    .modal-content, .caption {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @keyframes zoom {
+        from { transform: scale(0); }
+        to { transform: scale(1); }
+    }
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px) {
+        .modal-content {
+            width: 100%;
+        }
+    }
+    .mxxx{
+ margin-top: 100px;
+    }
+</style>
+<body>
+
+ <!-- header -->
+
+ <nav class="navbar navbar-expand-lg bg-black fixed-top" id="navbar">
+    <div class="container-fluid text-white">
+      <a class="navbar-brand fs-1 ms-3" href="#">PRAMUKHEXIM</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Product
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#gallery">Fresh vegetabale</a></li>
+              <li><a class="dropdown-item" href="#gallery">Fresh fruits</a></li>
+              <!-- <li><hr class="dropdown-divider" /></li> -->
+              <li>
+                <a class="dropdown-item" href="#gallery">Masala</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="ceriti.html">Certificate</a>
+              </li>
+            </ul>
+          </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ceriti.html">Certificate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact</a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+
+  <div class="mt-5 text-center ceti">
+    Certificate
+  </div>
+
+
+    <div class="row container text-center mx-auto mxxx">
+
+  
+
+        <div class="col-lg-4">
+            <img class="myImg" src="assets/images/GST CERTIFICATE_page-0001.jpg" alt="Snow" style="width:100%;max-width:300px">
+            <div>
+             GST   Certificate
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <img class="myImg" src="assets/images/ImportersandExporterscode(IEC)745414.jpeg.jpg" alt="Another Image" style="width:100%;max-width:300px"; height="400px">
+        </div>
+        <!-- <div class="col-lg-4">
+            <img class="myImg" src="assets/images/fresh-green-chilli-1607515482-5652326.jpeg" alt="Yet Another Image" style="width:100%;max-width:300px; height:200px;">
+        </div> -->
+    </div>
+
+    <!-- Modal for displaying images -->
+    <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close" id="cll">&times;</span>
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+        <!-- Modal Caption (Image Text) -->
+        <div class="caption"></div>
+    </div>
+
+
+    <div class="footer-basic bg-black">
+        <footer>
+            <div class="social">
+              <a href="https://www.instagram.com/pramukhexim/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://wa.me/918780388789" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <ul class="list-inline text-white">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="index.html#about">About</a></li>
+                <li class="list-inline-item"><a href="index.html#gallery">Gallery</a></li>
+                <li class="list-inline-item"><a href="index.html#Contact">Contact</a></li>
+                
+            </ul>
+            <p class="copyright">PRAMUKHEXIM © 2018</p>
+        </footer>
+    </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var images = document.querySelectorAll(".myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.querySelector(".caption");
+        let nav = document.getElementById("navbar")
+        
+        // Add click event listener to each image
+        images.forEach(function(img) {
+            img.onclick = function() {
+                modal.style.display = "block";
+                nav.style.display="none"
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            };
+        });
+
+        // Get the <span> element that closes the modal
+        var cll = document.getElementById("cll");
+
+        // When the user clicks on <span> (x), close the modal
+        cll.onclick = function() {
+            modal.style.display = "none";
+            nav.style.display="block"
+
+        }
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
