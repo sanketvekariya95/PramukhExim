@@ -293,7 +293,7 @@ h1 {
 /* Content */
 .content {
   background-color: white;
-  padding: 10px;
+  /* padding: 10px; */
 }
 .content img{
   height: 250px;
@@ -324,10 +324,45 @@ h1 {
 }
 
 
+/* our website */
 
 
+.aaa {
+  /* background-color: rgba(128, 128, 128, 0.146); */
+  /* padding: 10px; */
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  border-radius: 9px;
+  position: relative;
+  z-index: 1;
+}
 
-
+.aaa::after {
+  content: "";
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.505);
+  /* padding: 10px; */
+  border-radius: 9px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 0;
+  /* padding: 5px; */
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+.aaa:hover::after {
+  top: 0;
+  height: 100%;
+  
+  /* padding: 10px; */
+  /* transform: translateY(100px); */
+}
+.aaa:hover{
+  color: white !important;
+}
+.aaa:hover i{
+ color: white !important;
+}
 
 
 
