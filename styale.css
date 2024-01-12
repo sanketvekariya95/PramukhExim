@@ -299,7 +299,7 @@ h1 {
   /* padding: 10px; */
 }
 .content img{
-  height: 250px;
+  height: 280px;
 }
 
 /* The "show" class is added to the filtered elements */
@@ -518,6 +518,9 @@ h1 {
 
 
 /* hover  */
+/* .content img{
+  object-fit: cover;
+} */
 
 .content{
   position: relative;
@@ -592,4 +595,25 @@ h1 {
   align-items: center;
   color: white;
   background-attachment: fixed;
+}
+/* galery */
+
+.galleryslide{
+  margin-top: 70px;
+  width: 100%;
+  height: 92vh;
+  background-image: url('./assets/images/about\ image.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow:inset 0px 0px 0px 2000px #00000090;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-attachment: fixed;
+}
+
+.myimg{
+  object-fit: cover;
 }
