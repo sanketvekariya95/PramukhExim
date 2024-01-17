@@ -104,9 +104,23 @@
       margin-top: 100px;
     }
 </style>
-<body>
+<body onload="loadfunc()">
 
-  <nav class="navbar navbar-expand-lg bg-black fixed-top" id="navba">
+   <!-- loader -->
+   <div id="loader" class="load">
+    <div class="middle" id="middle">
+      <div class="bar bar1"></div>
+      <div class="bar bar2"></div>
+      <div class="bar bar3"></div>
+      <div class="bar bar4"></div>
+      <div class="bar bar5"></div>
+      <div class="bar bar6"></div>
+      <div class="bar bar7"></div>
+      <div class="bar bar8"></div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-black fixed-top" id="navbar">
     <div class="container-fluid text-white">
       <img src="assets/images/LOGO-removebg-preview.png" class="bg-white img-fluid rounded rounded-3" style="width: 50px;"  >
         <a class="navbar-brand fs-1 ms-3" href="#">PRAMUKHEXIM</a>
@@ -155,7 +169,7 @@
               <a class="nav-link" href="#">Product</a>
             </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="index.html#gallery">Gallery</a>
+            <a class="nav-link" href="./gallery.html">Gallery</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="ceriti.html">Certificate</a>
@@ -283,8 +297,8 @@ data-aos-duration="1500">
           </div>
           <ul class="list-inline text-white">
               <li class="list-inline-item"><a href="index.html">Home</a></li>
-              <li class="list-inline-item"><a href="index.html#about">About</a></li>
-              <li class="list-inline-item"><a href="index.html#gallery">Gallery</a></li>
+              <li class="list-inline-item"><a href="./About.html">About</a></li>
+              <li class="list-inline-item"><a href="./gallery.html">Gallery</a></li>
               <li class="list-inline-item"><a href="ceriti.html">Certificate</a></li>
               <li class="list-inline-item"><a href="index.html#Contact">Contact</a></li>
           </ul>
@@ -327,6 +341,7 @@ data-aos-duration="1500">
     </script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="loader.js"></script>
 <script>
   AOS.init();
 </script>

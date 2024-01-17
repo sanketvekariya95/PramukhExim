@@ -582,12 +582,12 @@ h1 {
 /* certificat */
 
 .Certificatealide{
-  margin-top: 70px;
+  margin-top: 80px;
   width: 100%;
   height: 92vh;
-  background-image: url('./assets/images/certificate.jpg');
+  background-image: url('./assets/images/achievement-business-goal-success-conceptual_31965-30204.jpg');
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   box-shadow:inset 0px 0px 0px 2000px #00000090;
   display: flex;
