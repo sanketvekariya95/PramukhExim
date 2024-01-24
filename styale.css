@@ -225,7 +225,7 @@ html{
   
    .active, .dot:hover {
     background-color: #717171;
-  }
+  } 
   
   /* Fading animation */
   .fade {
@@ -641,4 +641,22 @@ h1 {
 
 .myimg{
   object-fit: cover;
+}
+
+.tabs button{
+  border: 2px solid black !important;
+  margin: 0 10px;
+  font-weight: 500;
+  color: black !important;
+}
+.tabs .nav-item{
+  padding: 10px 0px;
+}
+.tabs .nav-pills .nav-link.active{
+  color: whitesmoke !important;
+  background-color: black !important;
+}
+.tabs .nav-pills .nav-link:hover{
+  color: whitesmoke !important;
+  background-color: black !important;
 }

@@ -161,15 +161,16 @@
               <a class="nav-link" href="About.html">About</a>
             </li>
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Product
-              </a>
+               <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Product
+                  <i class= "fa-solid fa-angle-down d-inline-block"></i>
+                </a>
               <ul class="dropdown-menu">
                 <li>
                   <a class="dropdown-item" href="index.html#gallery"
@@ -415,7 +416,7 @@ data-aos-duration="1500">
       var images = document.querySelectorAll(".myImg");
       var modalImg = document.getElementById("img01");
       var captionText = document.querySelector(".caption");
-      let nav = document.getElementById("navba");
+      let nav = document.getElementById("navbar");
 
       // Add click event listener to each image
       images.forEach(function (img) {
